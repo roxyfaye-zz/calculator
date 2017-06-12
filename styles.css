@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+
+#calculator {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    font-size: 2em;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 2px solid #83C178;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color:#61B34F;
+    color: white;
+    padding-left: 45px;
+
+}
+
+.math {
+    background-color: #83C178;
+    border-bottom: 2px solid #A0D099;
+}
+
+.math:hover, #equal:hover, #period:hover, #clear:hover {
+ 	color:black;
+ 	font-size: 40px;
+ 	font-weight: bold;
+ 	background-color:#83C178;
+ 	border: none;
+}
