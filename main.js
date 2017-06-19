@@ -8,6 +8,10 @@ var operatorsArray = document.getElementsByClassName('operator');
 
 var numbersArray = document.getElementsByClassName('number');
 
+var equals = document.getElementById('equals');
+
+
+
 function updateDisplayScreen(newChar) {
 
     displayString += newChar;
@@ -40,6 +44,15 @@ function handleOperatorPress(event) {
 
 }
 
+function handleEqualPress(event) {
+    
+    var equals = event.target;
+    var total = eval(displayString);
+    display.innerHTML = total;
+    
+
+}
+
 for (let i = 0; i < numbersArray.length; i++) {
 
     numbersArray[i].addEventListener("click", handleNumberPress);
@@ -52,6 +65,7 @@ for (let i = 0; i < operatorsArray.length; i++) {
 }
 
 clearButton.addEventListener("click", handleClearPress);
+equals.addEventListener("click", handleEqualPress);
 
 
 

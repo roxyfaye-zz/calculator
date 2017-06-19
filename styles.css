@@ -27,7 +27,7 @@ td {
 
 }
 
-.math {
+.operator, .equals {
     background-color: #83C178;
     border-bottom: 2px solid #A0D099;
 }
